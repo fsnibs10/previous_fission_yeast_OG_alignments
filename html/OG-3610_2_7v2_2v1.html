@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>JSAV alignments</title>
+<!-- JQuery and JQuery-UI -->
+<link href="scripts/jquery.css" rel="stylesheet" />
+<script type='text/javascript' src='scripts/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='scripts//jquery-ui-1.10.4.custom.min.js'></script>
+
+<!-- JSAV -->
+<link href="scripts/JSAV.css" rel="stylesheet" />
+<script type='text/javascript' src='scripts/JSAV.js'></script>
+
+<!-- If using tooltipster -->
+<link href="scripts/tooltipster-master/css/tooltipster.css" rel="stylesheet" />
+<script type='text/javascript' src='scripts/tooltipster-master/js/jquery.tooltipster.min.js'></script>
+<script>
+function enableTooltipster()
+{
+   $(document).ready(function() {
+       $('.tooltip').tooltipster();
+   });
+}
+enableTooltipster();
+</script>
+<!-- END -->
+</head>
+<body>
+<h1>JSAV Alignment Display</h1>
+
+<button onclick="goBack()">Back to OG table</button>
+<script type='text/javascript'>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+<script type='text/javascript'> 
+var MySeqs = [];
+MySeqs.push({id :"SPOG_02807", sequence :"MPP-APPPPPAPAP--AAAAPAPPPATKDRSALLGSIQKGTKLKKAVTNDRSAPLIGGGGVVGDASKVSSGSGKPSGAPPV-------PNSGSTVSNEPAVPAGA--PNLGGLFAQGMPKLRKVGNTSSSASPPQP---------PKSPTPMS--PPP---PPPTSSAPPVPPSVPSIPSASASAPRLPSSLPQKIPSSPSPSNMPSSPPPP-----------------------------APSKAPPLPPQ-PAPSISSQFPK---SSRVSS-----GNSQTL---------------PPPPPPPSHPPSS--PIPASSYTLQQRSNKVDDHGRFQFKDDSYLPQPRRFRGIPKIYRGSTGSTVPLRLA----"});
+MySeqs.push({id :"Slind_SOCG_00222", sequence :"MPPAPPPPPPAPAP--AAAAPAPPPVTKDRSALLNSIQKGTKLKKAQTNDRSAPVVGNGGVVGDASKAAGRSTKPSGAPPVP-----MPASGSTGSNEPPIPASA--PKLGGLFSQGMPKLRKVGNASSTASPPQP---------SKSPTPVSSPPPP---PPPISSAPPIPPSAPSIP--SAPAPNVPPSMPHKISRSPSPAIVPSSPPPPIPS--------------------------APSKAPPLPPQ-SAPPLGSHIPM---SSRVSS-----GNSQTL---------------PP-------PPSS--PIPASSYTLQHRSNKVDDHGRFQFKDDSYLPQPRRFRGGPKIYRGSTGSTVPLRLA----"});
+MySeqs.push({id :"SOCG_00222", sequence :"MPPAPPPPPPAPAP--AAAAPAPPPVTKDRSALLNSIQKGTKLKKAQTNDRSAPIVGGGGVVGDASKAGGRSTKPSGAPPVP-----MPTSGSAGTNEPPIPASA--PKLGGLFSQGMPKLRKVGNASSAASPPQP---------SKSSTPVSS--PP---PPPVSSAPPIPPSAPSIP--SAPAPRVPTSLPQKISRSPSPTKVPSSPPPPIPS--------------------------APSKAPPLPPQ-SAPPLGSHIPM---SSRVSS-----GNSQTL---------------PPPPPPPSHPPSS--PIPASSYTLQHRSDKVDDHGRFQFKDDSYLPQPRRFRGGPKIYRGSTGSTVPLRLD----"});
+MySeqs.push({id :"SOMG_01084", sequence :"MPP-APPPPPAPAP--AAAVPAPPPVTKDRSDLLNSIQKGTKLKKAQTNDRSAPSVGGGGIVGDASKAAGRSSKLAGAPPM-------PASGSSGSNEPAVPASA--PKLGGLFSQGMPKLRKVGKASSTASPPQP---------PISSKPMSS-PPP---PPPTYSAPPVPLSAPSIP--SASAPRIPTSLPQKTSPSPSPTNVPSSPPPPVPS--------------------------APSKAPPLPPQ-SAPPLGSHMPI---NSRVSS-----GNSQTF-------------PPPPPPPPPSHPPSS--PIPASSYTLQHRSDKVDDHGRFHFKDDSYLPQPRRFRGGPKIYRGSTGSTVPLRLA----"});
+MySeqs.push({id :"Sosmo_related_SOMG_01084", sequence :"MPP-PPPPPPAPAP--AAAVPAPPPVTKDRSDLLNSIQKGTKLKKAQTNDRSAPSVGGGGIVGDASKAAGHSSKPSGAPPV-------PASGSSGSNEPDVPVSA--PKLGGLFSQGMPKLRKVGNASSTASPPQT---------SKSSKPMSS-PPP---PPPAYSAPSVPLSAPSIP--SASAPRIPNSLPQKTSPSPSPTNVPSSPPPPVPS--------------------------APSKAPPLPPQ-SAPPLGSHMPI---NSRVSS-----GNSQTF------------SPPPPPPPPPSHPPSS--PIPASSYTLQHRSNKVDDHGRFHFKDDSYLPQPRRFRGGPKFYRGSTGSTVPLRLA----"});
+MySeqs.push({id :"SPBC13E7.09", sequence :"MAPAPPPPPPAPAP--AAAAPAPPLMTGDRSALLNSIQKGKKLKKATTNDRSAPVVGGGVV----GERKSNTPKSFAAPPVPTGAPSLPTSSNNTQQAEERP-SM--PALGGLFAGGMPKLRHIGKSSASAAPPSA---------PAPPTPQSELRPPTSAPPRPSIPPPSPASAPPIP--SK-APPIPSSLP-----PPAQPAAPVKSPPSAPS--------------------------LPSAVPPMPPK-VPPPPLSQAPVANTSSRPSSFAPPAGHAPNV----------TSESPKFPNRGPSIPSASVPPVPPSSYVLQQRPNRVDDHGRFHFKDDSYLPIPHPFLGVPKVYRGGSGTTVPLNLSSF--"});
+MySeqs.push({id :"Spombe_related_SPBC13E7.09", sequence :"MAPAPPPPPPAPAP--AAAAPAPPPLTGDRSALLNSIQKGKKLKKATTNDRSAPVVGGGVV----SERKSNTPKSFAAPPVPTGAPSLPPSSNNTQQAEERP-SM--PALGGLFAGGMPKLRHIGKSSASAAPPSA---------PAPPTPQSELRPPTSAPPRPSIPPPSPASAPPIP--SK-APPIPSSLP-----PPAQPAAPVKSPPSAPS--------------------------LPSAVPPMPPK-APPPPLSQAPVANTSSRPSSFAPPAGHAPNV----------PSESPKFSNRGPSIPSASVPPVPPSSYVLQQRPNRVDDHGRFHFKDDSYLPIPHPFLGVPKVYRGGSGTTVPLNLSSF--"});
+MySeqs.push({id :"SJAG_03119", sequence :"MGAPPPPPPPAPAP--AAAAP-PPPINNDRSALLSSIRQGTKLKKAVTNDRSAPTVGGGST----SSSGGAAPRLASAPKV-------PSIPSNGASAPPVPTAGGPPGLGGLFAGGMPKLRHVGGNSAAPKPAKASETHAHAPAPAKASPM----PPRLPHFRPSVPSPS-APAPPIP--SYSAPRVPSREF-----SSSSMSAPSAPPPPPPP-MPSSSVPPAPPTAPAHPA---HPAPPPVSAPPLPPSVPSPPLPSTS-----STRVNS-----SGSFDLQTARVLTSSPPLSSPPPPPPVPSSRTSL--PANSAAYTLQKRAQAVKEDGRFSFKPEEYLPPARPYRGVPKVYRGGSGSTVPLRLSNYDA"});
+MySeqs.push({id :"Svers_SJAG_03119", sequence :"MGAPPPPPPPAPAPAAAAAAP-PPPMNTDRSALLSSIRKGARLKKAVTNDRSAPTVGGGSV----SSSGGAAPRLASAPKV-------PSIPNNGASAPPVPAAGGPPGLGGLFAGGMPKLRHVGGNSAAPKPATASETHAH--VPAKASPM----PPRLPHFRPSVPTPS-APVPPIP--SYSAPRVPSREF-----SSSSMSAPSAPPPPPPPMMPSPSIPSASPTVLAHPAPPTAPAPPPVSAPPLPPAGPSPPLPSTS-----STRVNS-----SGSFDLQTARVLTSSPPLSSPPPPPPVPSSRASL--PANSAAYTLQKRAQAVKEDGRFSFKPEEYLPPARPYRGVPKVYRGGSGSTVPLRLSNYDA"});
+
+
+</script>
+
+
+<div id='sequenceDisplay'>
+</div>
+
+
+<script type='text/javascript'>
+var opts = Array();
+opts.sortable = true;
+opts.selectable = true;
+opts.deletable = true;
+opts.border = false;
+opts.toggleDotify = true;
+opts.toggleNocolour = true;
+opts.fasta = true;
+opts.consensus = true;
+opts.colourScheme = "zappo";
+opts.selectColour = true;
+opts.callback = "enableTooltipster";
+
+function myAction(divId, sequences)
+{
+   var seqString = "";
+   for(var i=0; i<sequences.length; i++)
+   {
+       seqString += ">" + sequences[i].id + "\n";
+       seqString += sequences[i].sequence + "\n";
+   }
+   alert(seqString);
+}
+
+var MyOptions = Array();
+MyOptions.sortable = true;
+MyOptions.selectable = true;
+MyOptions.deletable = true;
+MyOptions.scrollX = "100%";
+MyOptions.scrollY = "800px";
+MyOptions.highlight = [24,34];
+MyOptions.submit = "http://www.bioinf.org.uk/software/jsav/echo.cgi";
+MyOptions.action = 'myAction';
+MyOptions.actionLabel = "My Action";
+MyOptions.toggleDotify = true;
+MyOptions.toggleNocolour = true;
+MyOptions.fasta = true;
+MyOptions.consensus = true;
+MyOptions.colourScheme = "zappo";
+MyOptions.selectColour = true;
+MyOptions.callback = "enableTooltipster";
+MyOptions.idSubmit = "http://www.bioinf.org.uk/software/jsav/echo.cgi?seq=";
+MyOptions.idSubmitClean = true;
+
+printJSAV('sequenceDisplay', MySeqs, MyOptions);
+
+
+</script>
+<br>
+</body>
+</html>
